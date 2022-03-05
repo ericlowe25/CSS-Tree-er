@@ -5,12 +5,9 @@
     <title>Tree-er</title>
     <!-- ************************** -->
     <!-- add link to bootstrap here -->
+    <!-- ************************** -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- ************************** -->
-    <!-- ************************** -->
-    <!-- make sure main.css link is below bootstrap link -->
-    <link rel="stylesheet" href="main.css">
-    <!-- ************************** -->
 
     <link rel="stylesheet" href="main.css">
   </head>
@@ -55,8 +52,7 @@
     </nav>
 
     <!-- ************************** -->
-    <!-- Add class container-fluid on div that holds the hero/jumbo image -->
-    <!-- Add class img-fluid on img for hero/jumbo image -->
+    <!-- Set class container-fluid on div for hero/jumbo image -->
     <!-- ************************** -->
 
     <div class="container-fluid" id="hero">
@@ -66,48 +62,38 @@
         <br/>
         <a href="https://unsplash.com/s/photos/forrest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
     </div>
-    
+
       <!-- ************************** -->
-      <!-- Add class container on div for On Sale Now Section -->
-      <!-- Add class display-4 on h3-->
+      <!-- Set class container on div for On Sale Now Section -->
       <!-- ************************** -->
 
-      <div class="container">
-        <h3 class="display-4">On Sale Now</h3>
+    <div class="container">
+      <h3 class="display-4">On Sale Now</h3>
 
       <!-- ************************** -->
       <!-- Begin row of cards -->
-      <!-- Add class row to div -->
       <!-- ************************** -->
-
       <div class="row align-items-stretch">
 
         <!-- ************************** -->
         <!-- First card -->
-        <!-- Add class card col to div -->
-          <!-- Add class card-img-top to img -->
-          <!-- Add class card-body to div -->
-          <!-- Add class card-title to h5 -->
-          <!-- Add class card-text to p -->
-          <!-- Add class btn btn-primary to final a tag -->
-          <!-- ************************** -->
+        <!-- ************************** -->
 
-          <div class="card col" style="width: 18rem;">
-            <img src="../assets/rob-mulally-oacHEtIlXsA-unsplash.jpg" class="card-img-top" alt="oak">
-            <div class="card-body">
-              <h5 class="card-title">Oak</h5>
-              <p class="card-text">A Fine Classic!</p>
-              <p>
-                <span>Photo by <a href="https://unsplash.com/@robmulally?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rob Mulally</a> on <a href="https://unsplash.com/s/photos/oak?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-              </p>
-              <br/>
-              <a href="#" class="btn btn-primary">Gift it</a>
-            </div>
+        <div class="card col" style="width: 18rem;">
+          <img src="../assets/rob-mulally-oacHEtIlXsA-unsplash.jpg" class="card-img-top" alt="oak">
+          <div class="card-body">
+            <h5 class="card-title">Oak</h5>
+            <p class="card-text">A Fine Classic!</p>
+            <p>
+              <span>Photo by <a href="https://unsplash.com/@robmulally?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rob Mulally</a> on <a href="https://unsplash.com/s/photos/oak?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            </p>
+            <br/>
+            <a href="#" class="btn btn-primary">Gift it</a>
           </div>
+        </div>
 
         <!-- ************************** -->
         <!-- Second card -->
-        <!-- Already completed -->
         <!-- ************************** -->
 
         <div class="card col" style="width: 18rem;">
@@ -125,7 +111,6 @@
 
         <!-- ************************** -->
         <!-- Third card -->
-        <!-- Already completed -->
         <!-- ************************** -->
 
         <div class="card col" style="width: 18rem;">
@@ -145,15 +130,9 @@
 
       <!-- ************************** -->
       <!-- Best Sellers table -->
-      <!-- Add class display-4 to h3 -->
       <!-- ************************** -->
 
-      <h3 class="display-4">Best Sellers</h3>
-
-      <!-- ************************** -->
-      <!-- Best Sellers table -->
-      <!-- Add class tabe table-striped table-hover text-center to table element-->
-      <!-- ************************** -->
+      <h3 class="display-5">Best Sellers</h3>
 
       <table class="table table-striped table-hover text-center">
         <thead>
@@ -200,7 +179,6 @@
 
       <!-- ************************** -->
       <!-- Newsletter Form -->
-      <!-- Add class container to top div-->
       <!-- ************************** -->
 
       <div class="container">
@@ -209,9 +187,6 @@
 
           <!-- ************************** -->
           <!-- Text inputs -->
-          <!-- add class mb-3 to the first two divs -->
-          <!-- add class form-label to the first two labels -->
-          <!-- add class form-control to the first two text inputs -->
           <!-- ************************** -->
 
           <div class="mb-3">
@@ -226,9 +201,6 @@
 
           <!-- ************************** -->
           <!-- Checkbox 1 -->
-          <!-- add class mb-3 and form-check to the first div -->
-          <!-- add class form-label to the label -->
-          <!-- add class form-check-input to the checkbox input -->
           <!-- ************************** -->
 
           <div class="mb-3 form-check">
@@ -238,7 +210,6 @@
 
           <!-- ************************** -->
           <!-- Select/Options/dropdown menu -->
-          <!-- add class form-select to the select element -->
           <!-- ************************** -->
 
           <p>Select frequency of newsletters</p>
@@ -251,24 +222,19 @@
           </select>
 
           <!-- ************************** -->
-          <!-- Checkbox 2 (make into a switch w. Bootstrap) -->
-          <!-- add class form-check form-switch to the div -->
-          <!-- add class form-check-input to the input with type checkbox-->
-          <!-- add class form-label to the label -->
+          <!-- Checkbox 1 (make into a switch w. Bootstrap) -->
           <!-- ************************** -->
 
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
             <label class="form-check-label" for="flexSwitchCheckDefault" >Send my info to affiliates</label>
           </div>
-
-          <!-- ************************** -->
-          <!-- Submit button add class btn btn-primary to the button -->
-          <!-- ************************** -->
-
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-      </div> <!-- closes form div with class of container -->
+      </div>
+
+
+
 
     </div> <!-- closes first div with class of container -->
     </body>
